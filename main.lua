@@ -43,10 +43,11 @@ function pd.update()
 end
 
 -- Next learn how to... 
--- Make collision of player & enemy spawns reset game
--- Add lose screen 
+-- DONE: Change enemy movement speed as the score increases
+-- P1: Make collision of player & enemy spawns reset game
+-- P2: Add lose screen 
 -- High score tracker (on lose screen and start screen?)
--- Change spawn time or enemy movement speed as the score increases
--- Add cooldown to player shooting
--- Add sound effects 
 -- Add start screen
+-- Change spawn time as the score increases?
+-- Add sound effects 
+-- Add cooldown to player shooting

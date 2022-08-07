@@ -4,10 +4,12 @@ local pd <const> = playdate
 local gfx <const> = pd.graphics
 
 local spawnTimer
+local speedIncrease
 
 function startSpawner()
 	math.randomseed(pd.getSecondsSinceEpoch())
 	createTimer()
+	speedIncrease = 0
 end
 
 function createTimer()
@@ -20,8 +22,12 @@ end
 
 function spawnEnemy()
 	local spawnPosition = math.random(10, 230)
-	Enemy(430, spawnPosition, 1)
+	Enemy(430, spawnPosition, 1 + speedIncrease)
 end 
+
+function incrementSpeed()
+	speedIncrease += 0.01
+end
 
 function stopSpawner()
 	if spawnTimer then

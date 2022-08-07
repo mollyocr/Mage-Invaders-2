@@ -27,6 +27,7 @@ function Bullet:update()
 				collidedObject:remove()
 				incrementScore()
 				setShakeAmount(5)
+				incrementSpeed()
 			end
 		end
 		self:remove()
